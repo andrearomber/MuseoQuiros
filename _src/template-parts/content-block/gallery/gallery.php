@@ -1,11 +1,18 @@
 <?php /* Component arguments */
+$title = get_arg($args, 'title');
 $gallery = get_arg($args,'gallery'); 
 $aspect = get_arg($args,'aspect');
 $cols = get_arg($args,'cols'); ?>
 
 <?php if ($gallery) : ?>
-    <section class="content-section">
+    <section class="content-section section-gallery">
         <div class="container">
+        <?php if ($title) : ?>
+            <div class="section-header">
+                <h3><?php echo $title; ?></h3>
+            </div>
+        <?php endif; ?>
+
             <div class="gallery <?php echo $cols; ?>">
                 <?php foreach($gallery as $image) : ?>
                     <div class="gallery-item <?php echo $aspect; ?>">

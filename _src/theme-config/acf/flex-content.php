@@ -173,6 +173,12 @@ acf_add_local_field_group(array(
                     'display' => 'row',
                     'sub_fields' => array(
                         array(
+                            'key' => 'field_gallery_title',
+                            'label' => 'Título',
+                            'name' => 'title',
+                            'type' => 'text',
+                        ),
+                        array(
                             'key' => 'field_gallery_images',
                             'label' => 'Imágenes',
                             'name' => 'gallery_images',

@@ -62,12 +62,14 @@
             );
 
         elseif( get_row_layout() == 'gallery' ) :
+            $title = get_sub_field('title');
             $gallery = get_sub_field('gallery_images');
             $cols = get_sub_field('cols');
             $aspect = get_sub_field('aspect');
 
             get_template_part($tp . 'gallery/gallery', null,
                 array(
+                    'title'  => $title,
                     'gallery'  => $gallery,
                     'cols'  => $cols,
                     'aspect'  => $aspect
