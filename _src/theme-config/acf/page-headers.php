@@ -202,6 +202,7 @@ acf_add_local_field_group(array(
                     'label' => 'Título',
                     'name' => 'title',
                     'type' => 'text',
+                    'required' => 1
                 ),
                 array(
                     'key' => 'field_swiper_header_text',

@@ -59,9 +59,20 @@ section.cta-section {
 @include mq("md-down") {
     section.cta-section {
         .container {
+            h2 {
+                font-size: 2rem;
+            }
             .btn-default {
                 font-size: 1em;
             }
+        }
+        
+    }
+    .animate {
+        &.slide-up-big {
+            transition: none !important;
+            transform: none !important;
+            opacity: 1 !important; /* Asegúrate de que sea visible sin la animación */
         }
     }
 }

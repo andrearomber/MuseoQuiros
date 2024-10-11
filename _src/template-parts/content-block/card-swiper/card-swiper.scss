@@ -172,6 +172,10 @@ article.card {
 
         .card {
             flex: none !important;
+
+            .card-text h3 {
+                background: var(--c-accent-text);
+            }
         }
     }
 }

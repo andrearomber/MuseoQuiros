@@ -1,0 +1,31 @@
+.bootstrap-yop {
+    width: 50%;
+    margin: auto;
+
+    .basic-yop-poll-container {
+        padding: 1rem!important;
+        border-radius: var(--u-border-radius-lg)!important;
+        
+            .basic-question-title {
+                font-size: 1.2rem !important;
+                font-weight: bold !important; 
+            }
+
+            span.basic-text{
+                font-size: 1rem!important; 
+            }
+        .basic-vote a {
+            background-color: var(--c-primary)!important;
+            border: 1px solid var(--c-primary)!important;
+            border-radius: var(--u-border-radius)!important;
+            color: var(--bg-main)!important;
+            font-size: 1rem!important;
+            padding: 0.5rem 1rem!important;
+            transition: all 0.2s ease-in!important;
+
+            &:hover {
+                background-color: var(--c-primary-dark)!important;
+            }
+        }
+    }
+}

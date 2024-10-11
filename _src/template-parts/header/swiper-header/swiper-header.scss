@@ -1,15 +1,10 @@
-#hero-swiper-header {
+#hero-swiper-header, #hero-swiper-header.one-slide{
     --header-min-height: 80vh;
     --c-text-dark: #222222;
     margin-top: calc(var(--s-navbar) * -1);
     padding-bottom: 1rem;
     //padding-top: var(--s-navbar);
-    &.one-slide {
-        --header-min-height: 50vh;
-        h2.h1 {
-            font-size: 3.6rem;
-        }
-    }
+    
     h1, p.subtitle {
         font-size: 1.6rem;
         margin: 0!important;
@@ -89,5 +84,15 @@
         padding: 0.2rem 0.5rem;
         border-radius: 4px;
         display: inline-block;
+    }
+}
+
+@include mq("md-down") {
+    #hero-swiper-header.one-slide {
+        --header-min-height: 80vh;
+        h2.h1 {
+            margin-bottom: 0;
+            font-size: 2.5rem;
+        }
     }
 }
