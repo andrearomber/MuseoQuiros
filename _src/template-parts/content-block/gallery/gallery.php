@@ -13,7 +13,7 @@ $cols = get_arg($args,'cols'); ?>
             </div>
         <?php endif; ?>
 
-            <div class="acf-gallery <?php echo $cols; ?>">
+            <div class="gallery <?php echo $cols; ?>">
                 <?php foreach($gallery as $image) : ?>
                     <div class="gallery-item <?php echo $aspect; ?>">
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="gallery-image">

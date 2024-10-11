@@ -3,7 +3,7 @@
         margin-bottom: 0rem;
     }
 
-    .acf-gallery {
+    .gallery {
         display: grid;
         gap: 1rem;
         .gallery-item {
@@ -80,7 +80,7 @@
 
 
 @include mq("md-down") {
-    .acf-gallery {
+    .gallery {
         &.col4_2_1 {
             grid-template-columns: repeat(2, 1fr)!important;
         }
@@ -94,7 +94,7 @@
 }
 
 @include mq("sm") {
-    .acf-gallery {
+    .gallery {
         gap: 0.5rem;
         &.col4_2_1 {
             grid-template-columns: repeat(1, 1fr)!important;
