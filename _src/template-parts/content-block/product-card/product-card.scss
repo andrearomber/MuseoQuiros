@@ -14,7 +14,8 @@ section.product-card {
     .product-info {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 100%;
         h2 {
             margin-block: 0;
         }
@@ -110,7 +111,7 @@ section.product-card {
     .product-image {
         display: flex;
         position: relative;
-        flex: 0 0 35%;
+        flex: 0 0 50%;
         box-shadow: var(--u-shadow-lg);
         border-radius: var(--u-border-radius-lg);
         img.product-bg {
