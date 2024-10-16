@@ -38,6 +38,15 @@
                 )
             );
 
+        elseif( get_row_layout() == 'shortcode' ) : 
+            $text_content = get_sub_field('content');
+
+            get_template_part($tp . 'shortcode/shortcode', null,
+                array(
+                    'content'   => $text_content,
+                )
+            );
+
         elseif( get_row_layout() == 'text_media' ) : 
             $title = get_sub_field('title');
             $text = get_sub_field('text');

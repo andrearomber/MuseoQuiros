@@ -100,6 +100,20 @@ acf_add_local_field_group(array(
                         ),
                     ),
                 ),
+                'layout_shortcode' => array(
+                    'key' => 'layout_shortcode',
+                    'name' => 'shortcode',
+                    'label' => 'Shortcode',
+                    'display' => 'row',
+                    'sub_fields' => array(
+                        array(
+                            'key' => 'field_shortcode_content',
+                            'label' => 'Shorcode',
+                            'name' => 'content',
+                            'type' => 'text',
+                        ),
+                    ),
+                ),
                 'layout_text_media' => array(
                     'key' => 'layout_text_media',
                     'name' => 'text_media',
