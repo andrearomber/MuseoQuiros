@@ -52,7 +52,7 @@ form {
     //  3. Form elements
     // ----------------------------------
 
-    input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="date"], input[type="file"],
+    input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="phone"], input[type="date"], input[type="file"],
     select, textarea {
         padding: .5em 1em;
         border: var(--u-border-light);
