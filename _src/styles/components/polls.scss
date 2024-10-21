@@ -14,6 +14,18 @@
             span.basic-text{
                 font-size: 1rem!important; 
             }
+
+            .basic-other-answer .col-md-6,
+            .basic-other-answer .col-sm-6,
+            .basic-other-answer .col-xs-12 {
+                width: 100% !important; /* Fuerza que el ancho sea del 100% */
+                max-width: 100% !important;
+            }
+        
+            .basic-other-answer .basic-input-text {
+                width: 100% !important; /* Asegura que el input también ocupe todo el ancho */
+            }
+
         .basic-vote a {
             background-color: var(--c-primary)!important;
             border: 1px solid var(--c-primary)!important;
@@ -28,4 +40,23 @@
             }
         }
     }
+
+}
+
+@include mq("lg-down") {
+    .bootstrap-yop {
+        width: 70%;
+        display: flex;
+        .basic-yop-poll-container {
+            width: 100%;
+        }
+    }
+    
+}
+
+@include mq("md-down") {
+    .bootstrap-yop {
+        width: 80%;
+    }
+    
 }

@@ -84,7 +84,7 @@ $color: (
 
     // Content size & margins
     --s-container:          min(90%, 80rem);
-    --s-navbar:             72px;
+    --s-navbar:             5rem;
     --m-section:            2rem;
 
     // Utility
@@ -107,7 +107,13 @@ $color: (
     :root {
         --m-section:        1rem;
         --fs-default:       14px;
-        --s-navbar:         42px;
+        --s-navbar:         6rem;
+    }
+}
+
+@include mq("md-down") {
+    :root {
+        --s-navbar: 3rem;
     }
 }
 
