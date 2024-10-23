@@ -146,11 +146,17 @@ article.card {
         }
 
         h3 {
-            color: var(--bg-main)!important;
-            background: none!important;
-            background-clip: unset;
-            -webkit-background-clip: unset;
-            -webkit-text-fill-color: unset;
+            // color: var(--c-text)!important;
+            // background: none!important;
+            // background-clip: unset;
+            // -webkit-background-clip: unset;
+            // -webkit-text-fill-color: unset;
+            color: transparent;
+            background: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2px var(--c-text);
+            letter-spacing: .1ch;
         }
 
         .card-text p,

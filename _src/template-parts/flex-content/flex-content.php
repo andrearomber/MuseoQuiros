@@ -29,12 +29,10 @@
 
         elseif( get_row_layout() == 'wysiwyg' ) : 
             $text_content = get_sub_field('content');
-            $bg_class = get_sub_field('bg_class');
 
             get_template_part($tp . 'wysiwyg/wysiwyg', null,
                 array(
                     'content'   => $text_content,
-                    'bg_class'  => $bg_class
                 )
             );
 
@@ -53,7 +51,6 @@
             $btns = get_sub_field('btn_repeater');
             $type =  get_sub_field('type');
             $media_pos =  get_sub_field('position');
-            $bg_class =  get_sub_field('bg_class');
             $media = null;
             if ($type == 'upload-file') { $media = get_sub_field('file'); }
             elseif ($type == 'external-embed') { $media = get_sub_field('embed'); }
@@ -66,7 +63,6 @@
                     'type'      => $type,
                     'media_pos' => $media_pos,
                     'media'     => $media,
-                    'bg_class'  => $bg_class,
                 )
             );
 
@@ -99,7 +95,6 @@
         
         elseif( get_row_layout() == 'video' ) :
             $video_type = get_sub_field('type');
-            $bg_class =  get_sub_field('bg_class');
             if ($video_type == 'upload-file') $video = get_sub_field('file');
             elseif ($video_type == 'external-embed') $video = get_sub_field('embed');
 
@@ -107,7 +102,6 @@
                 array(
                     'type'  => $video_type,
                     'video' => $video,
-                    'bg_class' => $bg_class,
                 )
             );
 

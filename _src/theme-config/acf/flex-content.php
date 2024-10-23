@@ -85,19 +85,6 @@ acf_add_local_field_group(array(
                             'name' => 'content',
                             'type' => 'wysiwyg',
                         ),
-                        array(
-                            'key' => 'field_wysiwyg_bg',
-                            'label' => 'Color de fondo',
-                            'name' => 'bg_class',
-                            'type' => 'select',
-                            'default_value' => 'default',
-                            'choices' => array(
-                                'bg-white' => 'Blanco',
-                                'bg-light'  => 'Gris',
-                                'bg-primary'  => 'Color primario',
-                                'bg-secondary'  => 'Color secundario',
-                            )
-                        ),
                     ),
                 ),
                 'layout_shortcode' => array(
@@ -164,19 +151,6 @@ acf_add_local_field_group(array(
                                 0 => 'group_media_element',
                             ),
                             'display' => 'seamless',
-                        ),
-                        array(
-                            'key' => 'field_text_media_bg',
-                            'label' => 'Color de fondo',
-                            'name' => 'bg_class',
-                            'type' => 'select',
-                            'default_value' => 'default',
-                            'choices' => array(
-                                'bg-white' => 'Blanco',
-                                'bg-light'  => 'Gris',
-                                'bg-primary'  => 'Color primario',
-                                'bg-secondary'  => 'Color secundario',
-                            )
                         ),
                     ),
                 ),
@@ -317,19 +291,6 @@ acf_add_local_field_group(array(
                                     ),
                                 ),
                             ),
-                        ),
-                        array(
-                            'key' => 'field_video_bg',
-                            'label' => 'Color de fondo',
-                            'name' => 'bg_class',
-                            'type' => 'select',
-                            'default_value' => 'default',
-                            'choices' => array(
-                                'bg-white' => 'Blanco',
-                                'bg-light'  => 'Gris',
-                                'bg-primary'  => 'Color primario',
-                                'bg-secondary'  => 'Color secundario',
-                            )
                         ),
                     ),
                 ),

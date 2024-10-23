@@ -7,7 +7,7 @@ $bg_class = get_arg($args,'bg_class');
 $media_position = get_arg($args,'media_pos');
 $media = get_arg($args,'media'); ?>
 
-<section class="content-section text-media-section <?php echo $bg_class; ?>">
+<section class="content-section text-media-section">
     <div class="container <?php echo $media_position; ?>">
         <div class="text-elm animate slide-up-big">
             <?php if ($title) : ?>
