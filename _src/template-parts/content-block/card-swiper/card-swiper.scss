@@ -1,6 +1,14 @@
 section.card-swiper-section {
     overflow: hidden;
 
+    .container {
+        max-width: 100%;
+
+        .section-header {
+            margin-left: 5%;
+        }
+    }
+
     .card-row {
         display: flex;
         gap: 24px;
