@@ -26,12 +26,22 @@ $has_menu_items = wp_nav_menu(array('theme_location' => 'top', 'echo' => false))
                 'menu_class' => 'menu dropdown-submenu',
             ));
         ?>
-        <?php $contact_page = get_field('contact_page', 'options');?>
-        <div class="cta">
-            <a href="<?php echo esc_url($contact_page ? $contact_page['url'] : '#'); ?>" class="btn-secondary">
-            <?php echo esc_html($contact_page ? $contact_page['title'] : ''); ?>
-            </a>
-        </div>
+        
+        <?php $user_panel_page = get_field('user_panel_page', 'options');?>
+        <?php if(isset($_SESSION['booking_plugin']) && ($_SESSION['booking_plugin']['status'])) : ?>
+            <div class="cta">
+                <a href="<?php echo esc_url($user_panel_page ? $user_panel_page['url'] : '#'); ?>" class="btn-secondary">
+                    <i class="fa-solid fa-user"></i>
+                    <?php echo esc_html($_SESSION['booking_plugin']['user_name'] ?? 'Usuario'); ?>
+                </a>
+            </div>
+        <?php else : ?>
+            <div class="cta">
+                <a href="<?php echo esc_url($user_panel_page ? $user_panel_page['url'] : '#'); ?>" class="btn-secondary">
+                    <i class="fa-solid fa-user"></i> Iniciar sesión
+                </a>
+            </div>
+        <?php endif; ?>
 
         <div id="language-switcher">
             <button class="language-toggle">

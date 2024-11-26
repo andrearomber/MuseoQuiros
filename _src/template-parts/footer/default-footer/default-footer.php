@@ -56,5 +56,5 @@
         </div>
     </section>
 
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=zp643wBW"></script>
+    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=zp643wBW"></script> -->
 </footer>

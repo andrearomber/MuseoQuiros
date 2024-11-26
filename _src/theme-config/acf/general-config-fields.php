@@ -61,9 +61,9 @@ acf_add_local_field_group(array(
 			'required' => 0,
 		),
 		array(
-			'key' => 'field_contact_page',
-			'label' => 'Enlace a la página de contacto',
-			'name' => 'contact_page',
+			'key' => 'field_login_page',
+			'label' => 'Enlace al panel de usuario',
+			'name' => 'user_panel_page',
 			'type' => 'link',
 			'return_format' => 'array',
 		),
