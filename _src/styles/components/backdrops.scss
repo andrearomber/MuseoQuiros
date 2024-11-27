@@ -10,6 +10,9 @@
     right: 0;
     background-image: linear-gradient(to bottom, #F5F5DC00, #F5F5DC70);
 }
+.bg_backdrop {
+    filter: blur(8px)!important;
+}
 .backdrop-gradient-bottom::after {
     content: '';
     position: absolute;

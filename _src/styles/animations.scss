@@ -45,7 +45,7 @@
     }
     &.zoom-in-bg {
         transform: scale(1.4);
-        filter: blur(20px);
+        // filter: blur(20px);
         transition: transform 4s ease-in-out, filter 2s linear;
     }
 
@@ -63,7 +63,10 @@
         }
         &.zoom-in-bg {
             transform: scale(1);
-            filter: blur(0px);
+            
+            &:not(.bg_backdrop) {
+                filter: blur(0px);
+            }
         }    
     }
     &.delay-025, &.delay-i-0 {

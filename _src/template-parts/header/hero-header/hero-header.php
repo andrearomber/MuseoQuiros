@@ -18,7 +18,7 @@ if ($header) :
             <?php else : ?><h1 class="animate fade-in delay-075"><?php esc_html_e(get_the_title()); ?></h1><?php endif; ?>
         </div>
         <?php if($media): ?>
-            <div class="header-background<?php if ($bg_backdrop) :?> backdrop-gradient-bottom <?php endif; ?> animate zoom-in-bg">
+            <div class="header-background<?php if ($bg_backdrop) :?> bg_backdrop <?php endif; ?> animate zoom-in-bg">
                 <?php if (is_array($media) && $media['type'] == 'image') : ?>
                 <?php get_template_part('template-parts/content-block/image/image-elm', null,
                     array(
